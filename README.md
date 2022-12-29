@@ -1,9 +1,11 @@
-# <p align="center">
+<p align="center">
 <img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
 </p>
 
-<h1>osTicket - Ticket Lifecycle: Intake Through Resolution</h1>
-This tutorial outlines the lifecycle of a ticket from intake to resolution within the open-source help desk ticketing system osTicket.<br />
+<h1>osTicket - Post-Install Configuration</h1>
+This tutorial outlines the post-install configuration of the open-source help desk ticketing system osTicket.<br />
+
+
 
 
 <h2>Environments and Technologies Used</h2>
@@ -16,126 +18,45 @@ This tutorial outlines the lifecycle of a ticket from intake to resolution withi
 
 - Windows 10</b> (21H2)
 
-<h2>Ticket Lifecycle Stages</h2>
+<h2>Post-Install Configuration Objectives</h2>
 
-- Intake
-- Assignment and Communication
-- Working the Issue
-- Resolution
+- Configure Departments
+- Configure Agent (worker)
+- Configure Roles
+- Configure SLA
 
-<h2>Lifecycle Stages</h2>
+<h2>Configuration Steps</h2>
 
-<h3>Intake</h3>
 <p>
-<img src="https://i.imgur.com/psixsWn.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/HYP9JKs.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Go to localhost/osTicket/index.php  and click Open a New Ticket button to create a new ticket.
+Departments were configured through the Agents tab under the Admin Panel. Departments are used to route tickets in help desk. The Deparments may be private or public and they can be assigned to 1 or more agents and managers. 
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/Mnw3kNf.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/OSUYPM7.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Fill out the following fields: email address, full name, clock on help topic and select the drop-down menu, type an issue summary, type in the details in the box below, when finished click on create ticket.
-</p>
-<br />
-
-<h3>Assignment and Communication</h3>
-
-<p>
-<img src="https://i.imgur.com/2Xu2Mtw.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Login to osTicket portal as admin
-
+Agents were configured and given access to the help desk with the intent to respond and resolve tickets. When adding an Agent to the help desk, they can be be assigned to a Primary Department and given a Primary Role for the Tickets/Tasks routed to that department. Agents can be given Extended Access to additional departments of the help desk as well as assigned different Roles to those departments.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/Gj2aawB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/oR3MF2t.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Open your helpdesk ticket by clicking on the ticket number.  From there you can set the priority, assign department, assign to a specific rep, and set the service level agreement type (SLA).
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/8KaX0Vx.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<br />
-<p>
-<img src="https://i.imgur.com/MNiXMEH.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-In the Tickets window.  Click Assigned to and use the drop-down menu to select a support rep.
+Roles are the permissions granted to Agents per Department that they have access to. Each Role has a set of permissions that can be checked/unchecked for agents given that Role in association with a Department they have access to. An unlimited number of roles can be created and assigned to Agents with access to various departments. Roles are configured in the Agents tab under the Admin Panel.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/5RGuJHt.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/SRD6aI6.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Within the ticket tab, you can see the thread of any updates to the ticket and submit updates upon assignment. Once finished, click Post Reply and the ticket gets assigned to the appropriate department and your customer gets notified of the change. 
-</p>
-<br />
+SLA Plans or Service Level Agreements. The purpose of the SLA Plan is to provide a length of time in which the help desk Administrator expects tickets to be closed. SLA Plans can be created by going to the Manage tab under the Admin Panel and clicking "Add New SLA Plans." 
 
-<h3>Working the Issue</h3>
 
-<p>
-<img src="https://i.imgur.com/MdomY0W.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Log into osTicket as an agent
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/LMk1vFj.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Once logged in, the Tickets window show. It will show the ticket number, Last time it was updated, subject, who submitted the ticket, level of priority, and who it is assigned to.  Click on the ticket number to open the ticket to work.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/G9Vbbiy.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Once the ticket it opened, you can review all ticket items, the history of the ticket items such as who submitted the ticket, who assigned the ticket, and any other activity to the ticket. The bottom section is where you can leave a reply for the user who submitted the ticket and an internal note to notify management if the ticket has been resolved. 
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/TXbfadF.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-In the post reply section click the Post Internal Note tag-->Enter a summary in the Note Title box-->Type in the details in the body to comment what has happened with this ticket.
-</p>
-<br />
-
-<h3>Resolution</h3>
-<p>
-<img src="https://i.imgur.com/JQTMQUd.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Click on the drop-down menu for Ticket Status-->Select Closed-->Click on Post Note
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/QnAgqBE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-osTicket will take you back to the Tickets tab.  You will see a confirmation that the reply was posted successfully. Below the notification the ticket no longer show in the open menu.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/hZVoZtW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-To view the closed ticket, under the Tickets tab click on Closed-->Click on on today from the drop-down menu--> view closed ticket by clicking on the ticket number in the closed ticket list.
 </p>
 <br />
