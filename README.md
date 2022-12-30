@@ -3,7 +3,7 @@
 </p>
 
 <h1>osTicket - Post-Install Configuration</h1>
-This tutorial outlines the creation of tickets open-source help desk ticketing system osTicket.<br />
+This tutorial outlines the creation of Agents, Departments and SLA's in the help desk ticketing system osTicket.<br />
 
 
 
